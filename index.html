@@ -3,9 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex">
-<title>KAMANOW</title>
-<style>html,body{height:100%;margin:0;background:#000;}</style>
+<title>KAMANOW — The Official Fan Platform of KAMA</title>
+<meta name="description" content="KAMANOW is the official fan platform of KAMA, the K-Pop American Music Awards coming to the United States in 2027.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ctext x='32' y='44' font-family='Arial Black' font-size='34' font-weight='900' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&family=Archivo+Black&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  background:#030103; color:#fff; overflow:hidden;
+  font-family:'Archivo',-apple-system,sans-serif;
+  display:flex; align-items:center; justify-content:center; text-align:center;
+}
+.glow{
+  position:fixed; left:50%; top:50%; width:130vmax; height:130vmax;
+  transform:translate(-50%,-50%); pointer-events:none;
+  background:radial-gradient(circle at center, rgba(168,85,247,.15), rgba(236,72,153,.06) 30%, transparent 55%);
+  animation:breathe 10s ease-in-out infinite;
+}
+@keyframes breathe{0%,100%{opacity:.55;}50%{opacity:1;}}
+.stage{position:relative; z-index:1; padding:0 24px; max-width:720px;}
+.eyebrow{
+  font-size:clamp(10px,1.4vw,13px); letter-spacing:.5em; text-indent:.5em;
+  color:rgba(255,255,255,.5); font-weight:500; text-transform:uppercase;
+  opacity:0; animation:rise 1.4s cubic-bezier(.22,.61,.36,1) .3s forwards;
+}
+.mark{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(56px,13vw,120px); line-height:.95; margin:20px 0 6px;
+  background:linear-gradient(180deg,#fff 30%,#9a9aa6 78%,#43434c);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  filter:drop-shadow(0 0 36px rgba(217,70,239,.25));
+  opacity:0; animation:rise 1.6s cubic-bezier(.22,.61,.36,1) .7s forwards;
+}
+.mark small{
+  display:block; font-size:clamp(14px,2.4vw,22px); letter-spacing:.42em; text-indent:.42em;
+  -webkit-text-fill-color:rgba(255,255,255,.65); margin-top:10px; font-family:'Archivo',sans-serif; font-weight:400;
+}
+.desc{
+  margin-top:30px; font-size:clamp(14.5px,1.9vw,17.5px); font-weight:300; line-height:1.85;
+  color:rgba(255,255,255,.75); letter-spacing:.02em;
+  opacity:0; animation:rise 1.6s cubic-bezier(.22,.61,.36,1) 1.2s forwards;
+}
+.desc b{
+  font-weight:500;
+  background:linear-gradient(90deg,#c084fc,#f0abfc,#f9a8d4);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.cta{
+  margin-top:40px; display:inline-flex; align-items:center; gap:10px;
+  padding:15px 34px; border-radius:999px; text-decoration:none;
+  font-size:13px; font-weight:500; letter-spacing:.16em; text-indent:.16em; text-transform:uppercase;
+  color:#fff; border:1px solid rgba(217,70,239,.5);
+  background:linear-gradient(90deg, rgba(147,51,234,.25), rgba(219,39,119,.25));
+  transition:all .35s ease;
+  opacity:0; animation:rise 1.6s cubic-bezier(.22,.61,.36,1) 1.7s forwards;
+}
+.cta:hover{background:linear-gradient(90deg, rgba(147,51,234,.5), rgba(219,39,119,.5)); border-color:#e879f9; transform:translateY(-2px);}
+.meta{
+  margin-top:46px; font-size:10.5px; letter-spacing:.34em; text-indent:.34em;
+  color:rgba(255,255,255,.38); text-transform:uppercase;
+  opacity:0; animation:rise 1.6s ease 2.1s forwards;
+}
+@keyframes rise{from{opacity:0; transform:translateY(24px);}to{opacity:1; transform:none;}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;} .eyebrow,.mark,.desc,.cta,.meta{opacity:1;}}
+</style>
 </head>
-<body></body>
+<body>
+<div class="glow"></div>
+<main class="stage">
+  <p class="eyebrow">The Official Fan Platform of KAMA</p>
+  <h1 class="mark">KAMANOW<small>K-Pop American Music Awards</small></h1>
+  <p class="desc">
+    KAMANOW is the official fan platform of <b>KAMA — the K-Pop American Music Awards</b>,
+    a new global awards experience coming to the United States in 2027.
+    Fan voting, charts, tickets and more will open here soon.
+  </p>
+  <a class="cta" href="https://kamaawards.com">Visit KAMA Official Teaser &rarr;</a>
+  <p class="meta">2027.4 &nbsp;&middot;&nbsp; United States &nbsp;&middot;&nbsp; Stay tuned</p>
+</main>
+</body>
 </html>
