@@ -1,6 +1,6 @@
-# KAMANOW — KAMA 【K-POP American Music Awards】 Official Fan Platform (MVP)
+# KIMANOW — KIMA 【K-POP International Music Awards】 Official Fan Platform (MVP)
 
-KBS × U.S. Media Group 주최 K-POP 글로벌 음악 시상식 **KAMA**의 공식 팬 플랫폼 홈페이지 MVP.
+KBS × U.S. Media Group 주최 K-POP 글로벌 음악 시상식 **KIMA**(구 KAMA, 2026-11 명칭 변경)의 공식 팬 플랫폼 홈페이지 MVP.
 
 - 개최: 2027년 4월 3일 · SoFi Stadium, Los Angeles
 - 슬로건: "Fans Vote. Fans Influence. Fans Celebrate."
@@ -25,7 +25,7 @@ KBS × U.S. Media Group 주최 K-POP 글로벌 음악 시상식 **KAMA**의 공�
 git clone https://github.com/DavidRheeTaekyoung/kamanow.git
 cd kamanow
 # 이 폴더의 index.html, README.md 복사 후
-git add . && git commit -m "KAMA fan platform MVP" && git push origin main
+git add . && git commit -m "KIMA fan platform MVP" && git push origin main
 ```
 
 GitHub 저장소 → Settings → Pages → Branch: `main`, 폴더 `/` 선택 → 저장.
